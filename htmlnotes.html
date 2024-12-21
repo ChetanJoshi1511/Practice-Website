@@ -1,0 +1,195 @@
+<!-- #Meta tag in HTML: -->
+<!-- The <meta> tags in HTML provide metadata about the HTML document. Metadata is data (information) 
+about data. <meta> tags always go inside the document's <head> tag and are typically used to specify 
+the character set, page description, keywords, author, and other metadata. -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Internet Explorer compatibility -->
+    <meta name="description" content="This is a description of the web page"> <!-- Description for search engines -->
+    <meta name="keywords" content="HTML, CSS, JavaScript"> <!-- Keywords for search engines -->
+    <meta name="author" content="Your Name"> <!-- Author name -->
+    <title>Document</title>
+</head>
+<body>
+<!--  
+
+#Attributes in HTML:
+HTML attributes are used to define the characteristics of an HTML element. They are placed within the 
+element's opening tag and consist of two parts: the name and the value.
+1.Name: Specifies the property for that element.
+2.Value: Sets the value of that property for the element
+
+*1. ID attribute: 
+>>>The ID attribute is used to assign a unique identifier to an HTML element. Each element with an ID 
+has its own unique identity, 
+*2. Class attribute:
+>>>The class attribute is used to associate an HTML element with a particular class, typically for 
+styling or JavaScript manipulation. Unlike the ID attribute, the class attribute is not unique, and 
+multiple elements can share the same class.
+*3. Title attribute:
+>>>The title attribute provides additional information about an element and is often displayed as a 
+tooltip when the mouse hovers over it.
+*4. Style attribute:
+>>>The style attribute allows for inline styling of HTML elements. It is used in conjunction with CSS 
+properties to directly style individual elements within the HTML code.
+
+#Types of Tags in html:
+
+*1. Skeletal Tags: 
+<head>,<html>,<title>,<body>
+*2. Heading Tags: 
+<h1>,<h2>,...,<h6>
+*3. Paragraph Tag <p>:
+    It's advisable to use the <p> tag for textual content and not for layout control. 
+For layout purposes, consider using HTML5 semantic tags like <section>, <article>, or CSS techniques
+*4. Horizontal line Tag <hr>: 
+The <hr> tag is an empty or self-closing tag, meaning it doesn't require a 
+closing tag. 
+It serves as a visual separator, dividing different sections of your document with a horizontal line.
+*5. Line Break Tag: 
+This tag is responsible for breaking text lines or separating paragraphs. When implemented, 
+it automatically moves the text following the tag to the next line.
+*6. Anchor Tag: 
+-Also known as hyperlinks.
+-Used to link one document to another.
+HTML links primarily use two attributes:
+-href attribute: Defines the URL the link points to.
+-target attribute: Specifies where to open the linked document.
+
+#Tables in HTML:
+
+*Key Elements of HTML Table
+1.<table>: Defines the table itself.
+2.<tr>: Used for table rows.
+3.<th>: Used for table headings.
+4.<td>: Used for table cells (data).
+
+*Rowspan: 
+If you want a table cell to span multiple rows, you can use the rowspan attribute.
+*Colspan: 
+If you want a table cell to span multiple columns, you can use the colspan attribute.
+
+e.g:
+<table border="1">
+  <tr>
+    <td colspan="2">Merged Columns</td>
+  </tr>
+  <tr>
+    <td>Column 1</td>
+    <td>Column 2</td>
+  </tr>
+</table>
+
+*Column Groups:
+You can use the <colgroup> and <col> elements to apply styles to an entire column in an HTML table.
+
+Implementing Tables in HTML
+<table>
+  <caption><strong><u>Currently Showing</u></strong></caption>
+  <colgroup>
+      <col span="1" style="background-color:rgb(222, 21, 233)">
+      <col span="1" style="background-color:rgba(65, 143, 163, 0.893)">
+      <col span="1" style="background-color:rgba(161, 98, 137, 0.893)">
+  </colgroup>
+  <thead style="background-color: rgb(209, 255, 23);">
+      <tr>
+          <th><u>Show name</u></th>
+          <th><u>Rating(10)</u></th>
+          <th><u>Show ID</u></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Lucifer</td>
+          <td>9</td>
+          <td>GERR334</td>
+      </tr>
+      <tr>
+          <td>Money Heist</td>
+          <td>10</td>
+          <td>GRSG323</td>
+      </tr>
+      <tr>
+          <td>The Boys</td>
+          <td>9.5/td>
+              <td>FGFF3232</td>
+          </tr>
+      </tbody>
+      <tfoot style="background-color: rgb(95, 195, 95);">
+          <tr>
+          <td>Best Series: </td>
+          <td>Lucifer</td>
+      </tr>
+  </tfoot>
+</table>
+
+#Lists in HTML:
+
+*Types of Lists:
+1. Unrdered List: Displays items in bullets.
+2. Ordered List: Displays in ordered sequence and supports numerals,roman numerals, alphabetical,etc.
+3. Definition List: Organizes items in a format similar to a dictionary
+
+#Forms in HTML:
+How to Use Form Controls?
+>>>The <input> tag is commonly used to create form controls. The attributes of this tag define the 
+control's behavior.
+Syntax: <input type="" name="" value="">
+1.The "type" attribute specifies the type of input control (e.g., text, password, checkbox).
+2.The "name" attribute is used for identifying the control, especially when the data is sent to the 
+server.
+3.The "value" attribute sets a default value for the control, which the user can overwrite.
+
+*Radio type input:
+>>>When using radio type input to select one item or group of items at once we can set their name same.
+For eg. <input name="male" type="radio"> and <input name="female" type="radio"> both can be selected
+but <input name="gender" type="radio"> and <input name="gender" type="radio"> both cannot be selected.
+
+*Label element <label>:
+>>>The label tag defines a label for many form elements. The for attribute of the label tag should be
+equal to the id attribute of the <input> element to bind them together.
+>>>It is useful for screen reader users as the reader reads out the content of the <label> element when
+the user focuses on the <input> element.
+>>>The <label> element also helps user who have difficulty clicking on very small regions such as radio
+buttons or checkboxes - because when the user clicks the region around the input element they auto
+matically get selected.
+
+Imp input types:
+1.submit:	Represents a button that, when pressed, submits the form.
+2.reset:	Represents a button that, when pressed, resets all the form controls to their initial values
+3.color:	Allows the user to select a color.
+4.date:	Allows the user to select a date.
+5.email
+6.password
+7.file
+8.image: allows user to add an image that acts as a button.
+Once the submit button is pressed all the form values are stored in their respective
+name attribute fields and stored in url as shown:
+http://127.0.0.1:3000/form.html?name=Chetan+Joshi&email=chetanjoshi1511%40gmail.com&DOB=2003-10-11&mobile=8368575920
+
+*New HTML5 Attributes
+1.placeholder
+>>>This attribute provides a hint to the user as to what can be entered in the field.
+<input type="text" placeholder="Enter your username">
+
+2.required
+>>>The required attribute makes a field mandatory to fill out.
+<input type="text" required>
+
+3.autofocus
+The autofocus attribute automatically focuses the cursor on the particular input when the page loads.
+<input type="text" autofocus>
+
+-HTML5 Validation Attributes
+5.required
+As mentioned above, this attribute makes a field mandatory.
+<input type="text" required>
+
+#Semantic Tags:
+Writing semantic markup means understanding the heirachy of your content and how both users and 
+machine will read it.
+
+-->
