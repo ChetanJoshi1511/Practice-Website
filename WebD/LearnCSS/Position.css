@@ -1,0 +1,93 @@
+/* 
+#Position Property:
+    - The position property specifies the type of positioning method used for an element generally useful
+    when scrollong the page.
+    - There are five different position values:
+        1. static
+        2. relative
+        3. fixed
+        4. absolute
+        5. sticky
+
+#Static:
+    - An element with position: static; is not positioned in any special way; it is always positioned 
+    according to the normal flow of the page.
+    - Static positioned elements are not affected by the top, bottom, left, and right properties.
+
+#Relative:
+    - An element with position: relative; is positioned relative to its normal position.
+    - Setting the top, right, bottom, and left properties of a relatively-positioned element will cause 
+    it to be adjusted away from its normal position.
+    - Other content will not be adjusted to fit into any gap left by the element.
+
+#Fixed:
+    - An element with position: fixed; is positioned relative to the viewport, which means it always stays 
+    in the same place even if the page is scrolled.
+    - The top, right, bottom, and left properties are used to position the element.
+
+#Absolute:
+    - An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead
+    of positioned relative to the viewport, like fixed).
+    - However; if an absolute positioned element has no positioned ancestors, it uses the document body, and
+    moves along with page scrolling.
+
+#Sticky:
+    - An element with position: sticky; is positioned based on the user's scroll position.
+    - It sticks to the nearest ancestor that is positioned relative, absolute, or fixed, until it reaches the
+    specified offset value.
+    -Note: You must specify at least one of top, right, bottom or left for sticky positioning to work.
+
+
+#z-axis:
+It is the depth of the element in the page. The higher the z-index, the higher the element is in the 
+page. In simple words it is useful when we have overlapping elements and we want to select which 
+layer to come on top.
+
+
+*/
+
+.container {
+    /* position:absolute;
+    top:50px;
+    left:100px; */
+    width: 300px;
+    height: 600px;
+    background-color: grey;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    background-color: red;
+}
+
+.blue {
+    height:50vh;
+    background-color: blue; 
+    position:fixed; /* it is fixed to the viewport. */
+    top:100px;
+    right:0px;
+}
+
+.green {
+    position: absolute; /* its position depends according to the root element
+    or the last element having position relative.*/
+    background-color: green;
+    bottom:0px;
+}
+
+.purple{
+    position: sticky; /* it is sticky to the parent element. */
+    top:0px;
+    background-color: purple;
+}
+
+.spacer{
+    height:300vh;
+}

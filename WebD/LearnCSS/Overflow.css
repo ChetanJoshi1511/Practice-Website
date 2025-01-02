@@ -1,0 +1,83 @@
+/* 
+#Overflow Property:
+- The overflow property specifies what should happen if content overflows an element's box.
+- The overflow property has the following values:
+    - visible: Default. The overflow is not clipped. It renders outside the element's box.
+    - hidden: The overflow is clipped, and the rest of the content will be invisible.
+    - scroll: The overflow is clipped, and a scrollbar is added to see the rest of the content.
+    - auto: Similar to scroll, but it adds scrollbars only when necessary.
+    - inherit: Specifies that the value of the overflow property should be inherited from the parent 
+    element.
+
+#Overflow-x and Overflow-y:
+- The overflow-x property specifies whether to clip the content, add a scrollbar, or display it when it
+overflows the content's box horizontally.
+- The overflow-y property specifies whether to clip the content, add a scrollbar, or display it when it
+overflows the content's box vertically.
+
+#Float Property:
+The float property specifies whether an element should float to the left, right, or not at all.
+Note: Absolutely positioned elements ignore the float property!
+
+#clear Property:
+The clear property specifies on which sides of an element floating elements are not allowed to float.
+- The clear property has the following values:
+    - none: Allows floating elements on both sides.
+    - left: No floating elements allowed on the left side.
+    - right: No floating elements allowed on the right side.
+    - both: No floating elements allowed on either side.
+    - inherit: Specifies that the value of the clear property should be inherited from the parent element.
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid purple;
+}
+
+.img1{
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    float: left;
+}
+
+.img2{
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    float: left;
+}
+
+.container{
+    margin:10px;
+    padding:10px;
+    width: 98%;
+    height: 400px;
+    border: 2px solid red;
+    /* It will hide the content that overflows the container */
+    /* overflow: hidden; */
+    /*  It will add a scrollbar to see the rest of the content */
+    /* overflow: scroll; */
+    /*  It will add a scrollbar only when necessary */
+    overflow: auto;
+    /*  It will render the content outside the container */
+    /* overflow: visible; */
+    /*  It will inherit the overflow property from the parent element */
+    /* overflow: inherit; */
+}
+
+.block{
+    overflow:auto;
+    margin-bottom:10px;
+}
+.p1{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom:10px;
+}
+
+.p2{
+    font-weight: 500;
+    font-size: 20px;
+}

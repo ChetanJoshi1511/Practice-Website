@@ -1,0 +1,52 @@
+/*
+Percentage: % of the parent element
+>>> percentage is in terms of parent element.
+
+ViewWidth: It is the absolute width of the viewport.
+>>> 1vw = 1% of the viewport width.
+
+ViewHeight: It is the absolute height of the viewport.
+>>> 1vh = 1% of the viewport height.
+
+Pixels: It is the absolute length which does not change even when the user changes the font size
+or size in browser setting.
+>>> 1px = 1 pixel.
+
+Em: It is the font size of the element relative to the parent.
+Default value of each element is 1em.
+
+Rem: It is the font size of the root element.
+>>> 1rem = 1 font size of the root element.
+
+Ch: It is the width of the character "0" in the element's font.
+>>> 1ch = 1 width of the character "0".
+
+Ex: It is the height of the character "x" in the element's font.
+>>> 1ex = 1 height of the character "x".
+
+Inch: It is the absolute length.
+>>> 1in = 1 inch.
+
+*/
+body{
+    font-size: 1em;
+}
+
+main{
+    border: 5px dashed red;
+    width: 50vw;
+    height: 15vh;
+}
+
+section{
+    border: 5px solid green;
+    width: 50%;
+}
+
+h1{
+    /* font-size: 3rem; */
+    font-size: 3em;
+    border: 5px solid blue;
+    width: 75vw;
+    text-align: center;
+}

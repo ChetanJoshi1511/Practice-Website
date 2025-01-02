@@ -1,0 +1,38 @@
+/* univeresal selector in css */
+*{
+    font-family: sans-serif;
+}
+
+/*element selector in css*/
+body{
+    font-size: 20px;
+}
+
+
+/* id selector in css */
+#first{
+    color:red;
+}
+
+/* grouping selector in css */
+#third, #second{
+    font-family: sans-serif;
+    color:blue;
+}
+
+/* class selector in css */
+.highlight{
+    background-color: yellow;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* nested selector in css*/
+#second>p{
+    color: green;
+}
+
+/* 
+#Specificity order in css
+* inline style > id > class > element > universal 
+*/

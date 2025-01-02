@@ -1,0 +1,51 @@
+<!-- Implementing forms in HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Form-Enter your details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Feedback form: </h1>
+    <form action="">
+        <label for="name">Enter your name: </label>
+        <input type="text" id="name" placeholder="Full name here" autofocus name="name" required> 
+        <label for="email">Enter your email: </label>
+        <input type="email" id="email" name="email"> 
+        <br><br>
+        <label for="dob">Enter your DOB: </label>
+        <input type="date" id="dob" name="DOB">
+        <label for="mobile">Enter your mobile number: </label>
+        <input type="text" id="mobile" name="mobile">
+        <p>Select your gender: </p>
+        <label for="male">Male</label>
+        <input name="gender" type="radio" id="male">
+        <label for="female">Female</label>
+        <input name="gender" id="female" type="radio">
+        <br><br>
+        <label for="file">Upload file here:</label>
+        <input type="file" name="file" id="file">
+        <br><br>
+        <label for="issue">Select your issue: </label>
+        <select id="issue">
+            <option name="login">Problem with login</option>
+            <option name="balance">Problem fetching balance</option>
+            <option name="bug">Report a bug</option>
+        </select>
+        <br><br>
+        <label for="issueDescription">Describe your issue here:</label>
+        <br>    
+        <textarea id="issueDescription" cols="30" rows="10" name="issueDescription"></textarea>
+        <br><br>
+        <label for="resetbtn"></label>
+        <input type="reset" id="resetbtn">
+        <label for="submitbtn"></label>
+        <input type="submit" id="submitbtn">
+    </form>
+</body> 
+
+</html>

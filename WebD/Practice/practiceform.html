@@ -1,0 +1,58 @@
+<!DOCTYPE html><!-- Defines the document type as HTML5 -->
+<html>
+
+<head>
+    <meta charset="utf-8"><!-- Specifies the character encoding of the document -->
+    <title>How to specify the language of the target URL</title><!-- Sets the title of the HTML page -->
+    <style>
+        label {
+            display: block;
+            font-weight: 525;
+        }
+
+        a {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Travel Reservation Form</h1>
+    <h2>* denotes mandatory</h2>
+    <form action="" method="get">
+        <label for="name">Full name*:</label>
+        <input name="userName" type="text" id="name" placeholder="FirstName LastName" required autofocus>
+        <label for="email">Email address*:</label>
+        <input type="email" id="email" name="userEmail" placeholder="EMAIL_ADDRESS" required>
+        <label for="tourPackage">Select Tour Package*:</label>
+        <select id="tourPackage" required>
+            <option name="tourPackage">Goa</option>
+            <option name="tourPackage">Maldives</option>
+        </select>
+        <br>
+        <label for="arrivalDate">Arrival date*:</label>
+        <input type="date" id="arrivalDate" name="arrivalDate" required>
+        <label for="numPersons">Number of persons*:</label>
+        <input type="number" id="numPersons" name="numPersons" placeholder="UNKNOWN_TYPE" required>
+        <label>What would you want to avail?*</label>
+        <label style="display:inline;" for="boarding">Boarding</label>
+        <input type="checkbox" id="boarding" name="boarding">
+        <br>
+        <label style="display:inline;" for="fooding">Fooding</label>
+        <input type="checkbox" id="fooding" name="fooding">
+        <br>
+        <label style="display:inline;" for="sightseeing">Sight seeing</label>
+        <input type="checkbox" id="sightseeing" name="sightseeing">
+        <label for="discountCode">Discount Coupon Code:</label>
+        <input type="text" id="discountCode" placeholder="UNKNOWN_TYPE" name="discountCode">
+        <a href="#">Terms and Conditions*</a>
+        <input type="radio" name="terms" id="agree">
+        <label for="agree" style="display:inline;">I agree</label>
+        <input type="radio" id="disagree" name="terms">
+        <label for="disagree" style="display:inline;">I disagree</label>
+        <br>
+        <input type="submit" value="Complete reservation">
+    </form>
+</body>
+
+</html>

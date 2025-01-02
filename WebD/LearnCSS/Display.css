@@ -1,0 +1,65 @@
+/*
+#Block Elements:
+A block-level element ALWAYS starts on a new line and takes up the full width available (stretches out 
+to the left and right as far as it can).
+The <div> element is a block-level element.
+
+#Inline Elements:
+An inline element does not start on a new line and only takes up as much width as necessary.
+This is an <span> element inside a paragraph.
+
+The width property of an inline element is only applied if the element has a background-color or border.
+
+#Inline-block Elements:
+An inline-block element is placed as an inline element (on the same line as adjacent content), but it
+behaves as a block element.
+The <img> element is an inline element, but it can be changed to behave like a block-level element.
+
+#None:
+The display: none; property is used to hide an element. The element will be hidden, and the page will be
+displayed as if the element is not there.
+
+*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+a{
+    width:1000px; /*changing width of anchor tag does not changes the width as it is inline element*/
+    border: 1px solid red;
+    display:block; /*by default anchor is an inline element*/
+}
+
+p{
+    border: 1px solid red;
+}
+
+span{
+    border: 1px solid red;
+}
+
+img{
+    border: 1px solid red;
+}
+
+ul{
+    text-align: center; 
+    font-size: 1.5rem;
+    color:white;
+    background-color: black;
+    padding:30px;
+}
+
+li{
+    display:inline; /*changing display of list item to inline*/
+    /* border: 1px solid white; */
+    padding: 10px;
+    margin: 10px
+}
+
+li:hover{
+    /* background-color: lightcyan; */
+    color:rgb(81, 0, 255);
+}

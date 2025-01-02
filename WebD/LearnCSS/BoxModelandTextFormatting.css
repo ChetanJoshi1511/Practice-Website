@@ -1,0 +1,90 @@
+/* 
+#Box Model:
+- The box model is a fundamental concept in CSS. It comprises the following:
+  - Content: The content of the box, where text and images appear.
+  - Padding: Clears an area around the content. The padding is transparent.
+  - Border: A border surrounding the padding (if any) and content.
+  - Margin: Clears an area outside the border. The margin is transparent.
+
+- The box model allows us to add a border around elements, and to define space between elements.
+
+Important: When you set the width and height properties of an element with CSS, you just set the width 
+and height of the content area. 
+To calculate the total width and height of an element, you must also include the padding and borders.
+
+- The box-sizing property allows us to include the padding and border in an element's total width and 
+height.
+
+>>>If we increase the width and height of an element, it will increase the size of the content area,
+but the padding, border, and margin will remain the same size.
+>>>If we increase the padding, border, or margin, the size of the content area will decrease.
+This can be done by using border-sizing: border-box; property.
+
+#Text Formatting:
+- The color property is used to set the color of the text.
+- The background-color property is used to set the background color of an element.
+- The text-align property is used to set the horizontal alignment of a text.
+- The text-decoration property is used to set or remove decorations from text.
+- The text-transform property is used to specify uppercase and lowercase letters in a text.
+- The letter-spacing property is used to specify the space between the characters in a text.
+- The line-height property is used to specify the space between lines of text.
+- The word-spacing property is used to specify the space between the words in a text.
+- The white-space property is used to specify how white-space inside an element is handled.
+- The word-wrap property allows long words to be able to be broken and wrap onto the next line.
+- The word-break property is used to specify how words should break when reaching the end of a line.
+- The text-shadow property adds shadow to text.
+- The text-overflow property specifies how overflowed content that is not displayed should be signalled 
+to the user.
+
+#Example:
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content{
+  margin: 20px;
+  border: 1px solid black;
+  padding: 20px;
+  height: 6em;
+  width: fit-content;
+  height: fit-content;
+  text-align: justify; /* aligns the text to the left and right */
+  line-height: 1.5rem; /* sets the space between the lines */
+  word-spacing: 2px;
+}
+
+.decorate{
+  color:black;
+  background-color: yellow;
+  text-align: center;
+  text-decoration-line:underline;
+  text-decoration-style: wavy;
+  text-decoration-color: black;
+  text-shadow: 4px 4px 5px red /* horizontal shadow, vertical shadow, blur radius, color */
+}
+
+.myfont{
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  /* text-transform:capitalize; sets the first letter of each word to uppercase */
+  text-transform:uppercase; 
+  letter-spacing: 1px;
+}
+
+.box{
+    background-color: lightyellow;
+    color: red;
+    border: 20px solid rgb(33, 33, 212); /* border-width border-style border-color */
+    margin: 40px;  /* seperates the box from the border */
+    /* padding: 10px 10px 10px 10px; top right bottom left    */
+    padding: 40px;
+    /*padding sets the space between the content and the border */
+    width: 200px;
+    height: 200px;
+
+}
