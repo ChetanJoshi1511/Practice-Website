@@ -20,9 +20,9 @@ body{
   height: 330vh; /* Set the container height to 100vh */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Move this to the container to position the content at the bottom */
+  justify-content: center; 
   align-items: center;
-  overflow: auto; /* Add this line to enable scrolling */
+  overflow: auto;
 }
 .flower{
     position: relative;
